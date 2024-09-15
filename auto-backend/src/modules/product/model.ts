@@ -13,6 +13,7 @@ class Product extends Model {
   public price!: number;
   public description!: string;
   public imageurl!: string;
+  public zipFile!: string;
   public readonly createdAt!: Date;
   public readonly updatedAt!: Date;
 
@@ -42,11 +43,7 @@ Product.init(
     },
     region: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    date: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     price: {
       type: DataTypes.FLOAT,
@@ -57,6 +54,10 @@ Product.init(
       allowNull: true,
     },
     imageurl: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    zipFile: {
       type: DataTypes.STRING,
       allowNull: true,
     },
