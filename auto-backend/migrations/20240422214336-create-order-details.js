@@ -41,6 +41,14 @@ module.exports = {
         type: Sequelize.DECIMAL(10, 2),
         allowNull: false
       },
+      created_by: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      approved_by: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
