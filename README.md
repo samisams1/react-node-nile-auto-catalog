@@ -42,4 +42,4 @@ Make sure you have the following installed:
 
 ```bash
 git https://github.com/samisams1/react-node-nile-auto-catalog
-cd auto-catalog-search
+cd auto-catalog-search# virtual-equb-react
